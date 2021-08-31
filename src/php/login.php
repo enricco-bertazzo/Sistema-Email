@@ -24,6 +24,7 @@ if($row == 1){
     exit();
     
 } else {
+    $_SESSION['erro'] = true;
     header('location: index.php');
     exit();
 }

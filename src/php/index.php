@@ -1,3 +1,5 @@
+<?php session_start() ?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -23,6 +25,14 @@
                 <label for="email">Senha</label>
             </div>
             <button class="btn w-100 btn-primary" type="submit">Entrar</button>
+            <?php
+            if (isset($_SESSION['erro'])) {
+                echo '<div class="alert alert-danger mt-3" role="alert">
+                    Usuário ou senha incorreto!
+                </div>';
+                unset($_SESSION['erro']);
+            }
+            ?>
             <p class="mt-5 mb-3">Ainda não possui um E-mail? <a href="cadastro.php">Cadastre-se</a></p>
         </form>
     </main>
