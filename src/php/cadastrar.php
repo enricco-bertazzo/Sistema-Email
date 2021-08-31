@@ -12,7 +12,7 @@ $result = mysqli_query($connect, $sql);
 $row = mysqli_fetch_assoc($result);
 
 if($row['total'] == 1){
-    $_SESSION['usuario_existe'] == true;
+    $_SESSION['usuario_existe'] = true;
     header('location: cadastro.php');
     exit();
 }

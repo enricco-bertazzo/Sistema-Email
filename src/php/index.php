@@ -32,6 +32,12 @@
                 </div>';
                 unset($_SESSION['erro']);
             }
+            if (isset($_SESSION['estatus_cadastro'])) {
+                echo '<div class="alert alert-success mt-3" role="alert">
+                    Usuário cadastrado com sucesso!
+                </div>';
+                unset($_SESSION['estatus_cadastro']);
+            }
             ?>
             <p class="mt-5 mb-3">Ainda não possui um E-mail? <a href="cadastro.php">Cadastre-se</a></p>
         </form>

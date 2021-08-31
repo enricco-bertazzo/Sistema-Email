@@ -1,3 +1,5 @@
+<?php session_start() ?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -31,6 +33,14 @@
                 <label for="email">Senha</label>
             </div>
             <button class="btn w-100 btn-primary" type="submit">Cadastrar-se</button>
+            <?php
+            if (isset($_SESSION['usuario_existe'])) {
+                echo '<div class="alert alert-danger mt-3" role="alert">
+                    Usuário já cadastrado!
+                </div>';
+                unset($_SESSION['usuario_existe']);
+            }
+            ?>
             <p class="mt-5 mb-3">Já possui um e-mail? <a href="index.php">Entrar</a></p>
         </form>
     </main>
