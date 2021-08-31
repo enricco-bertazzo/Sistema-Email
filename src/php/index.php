@@ -23,7 +23,7 @@
                 <label for="email">Senha</label>
             </div>
             <button class="btn w-100 btn-primary" type="submit">Entrar</button>
-            <p class="mt-5 mb-3">Ainda não possui um E-mail? <a href="http://">Cadastre-se</a></p>
+            <p class="mt-5 mb-3">Ainda não possui um E-mail? <a href="cadastro.php">Cadastre-se</a></p>
         </form>
     </main>
     <script src="../js/bootstrap.js"></script>
