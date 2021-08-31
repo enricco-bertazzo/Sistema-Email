@@ -4,15 +4,15 @@
 
 ## Funcionalidades
 
-- [ ] F1 - Sistema de cadastro
-  - [ ] Nome
-  - [ ] Sobrenome
-  - [ ] E-mail desejado
-  - [ ] Senha
+- [x] F1 - Sistema de cadastro
+  - [x] Nome
+  - [x] Sobrenome
+  - [x] E-mail desejado
+  - [x] Senha
 >
-- [ ] F2 - Sistema de login
-  - [ ] E-mail
-  - [ ] Senha
+- [x] F2 - Sistema de login
+  - [x] E-mail
+  - [x] Senha
 >
 - [ ] F3 - Caixa de entrada
   - [ ] Enviar e-mail

@@ -2,7 +2,7 @@ html, body {
     height: 100%;
 }
 
-body {
+.body {
     display: flex;
     align-items: center;
     padding-top: 40px;
@@ -62,10 +62,6 @@ body {
     z-index: 2;
 }
 
-.cadastro-sem-borda {
-    
-}
-
 .cadastro input[name="nome"] {
     margin-bottom: -1px;
     border-bottom-right-radius: 0;
@@ -92,4 +88,22 @@ body {
     margin-bottom: 10px;
     border-top-right-radius: 0;
     border-top-left-radius: 0;
+}
+
+.email-ico {
+    font-size: 28px;
+    color: blue;
+}
+
+.emails {
+    width: 100%;
+    max-width: 1100px;
+    padding: 25px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.no-style-link {
+    margin-left: 25px;
+    text-decoration: none;
 }

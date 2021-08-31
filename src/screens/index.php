@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<body class="text-center">
+<body class="body text-center">
     <main class="login">
         <form action="../php/login.php" method="POST">
             <i class="fas fa-envelope-open-text login-ico mb-3"></i>
