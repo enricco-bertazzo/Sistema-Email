@@ -14,7 +14,7 @@
 
 <body class="text-center">
     <main class="cadastro">
-        <form action="cadastrar.php" method="POST">
+        <form action="../php/cadastrar.php" method="POST">
             <i class="fas fa-envelope-open-text cadastro-ico mb-3"></i>
             <div class="form-floating">
                 <input class="form-control" type="text" name="nome" id="nome" placeholder="Nome" required autofocus minlength="1" maxlength="16" onkeyup="validarNome()">

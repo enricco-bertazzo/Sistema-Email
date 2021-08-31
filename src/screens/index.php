@@ -14,7 +14,7 @@
 
 <body class="text-center">
     <main class="login">
-        <form action="login.php" method="POST">
+        <form action="../php/login.php" method="POST">
             <i class="fas fa-envelope-open-text login-ico mb-3"></i>
             <div class="form-floating">
                 <input class="form-control" type="email" name="email" id="email" placeholder="E-mail" required autofocus minlength="1" maxlength="32">

@@ -2,7 +2,7 @@
 session_start();
 
 if(!$_SESSION['EMAIL']) {
-    header('location: index.php');
+    header('location: ../screens/index.php');
     exit();
 }
 
