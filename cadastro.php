@@ -11,9 +11,17 @@
 </head>
 
 <body class="text-center">
-    <main class="login">
+    <main class="cadastro">
         <form action="" method="POST">
-            <i class="fas fa-envelope-open-text login-ico mb-3"></i>
+            <i class="fas fa-envelope-open-text cadastro-ico mb-3"></i>
+            <div class="form-floating">
+                <input class="form-control" type="text" name="nome" id="nome" placeholder="Nome">
+                <label for="nome">Nome</label>
+            </div>
+            <div class="form-floating">
+                <input class="form-control cadastro-sem-bord" type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome">
+                <label for="sobrenome">Sobrenome</label>
+            </div>
             <div class="form-floating">
                 <input class="form-control" type="email" name="email" id="email" placeholder="E-mail">
                 <label for="email">E-mail</label>
@@ -22,8 +30,8 @@
                 <input class="form-control" type="password" name="senha" id="password" placeholder="Senha">
                 <label for="email">Senha</label>
             </div>
-            <button class="btn w-100 btn-primary" type="submit">Entrar</button>
-            <p class="mt-5 mb-3">Ainda não possui um E-mail? <a href="cadastro.php">Cadastre-se</a></p>
+            <button class="btn w-100 btn-primary" type="submit">Cadastrar-se</button>
+            <p class="mt-5 mb-3">Já possui um e-mail? <a href="index.php">Entrar</a></p>
         </form>
     </main>
     <script src="src/js/bootstrap.js"></script>

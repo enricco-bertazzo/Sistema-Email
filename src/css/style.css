@@ -17,6 +17,10 @@ body {
     margin: auto;
 }
 
+.login a {
+    text-decoration: none;
+}
+
 .login-ico {
     font-size: 96px;
     color: blue;
@@ -33,6 +37,58 @@ body {
 }
 
 .login input[type="password"] {
+    margin-bottom: 10px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.cadastro {
+    width: 100%;
+    max-width: 400px;
+    padding: 25px;
+    margin: auto;
+}
+
+.cadastro a {
+    text-decoration: none;
+}
+
+.cadastro-ico {
+    font-size: 96px;
+    color: blue;
+}
+
+.cadastro .form-floating:focus-within {
+    z-index: 2;
+}
+
+.cadastro-sem-borda {
+    
+}
+
+.cadastro input[name="nome"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.cadastro input[name="sobrenome"] {
+    margin-bottom: -1px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.cadastro input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.cadastro input[type="password"] {
     margin-bottom: 10px;
     border-top-right-radius: 0;
     border-top-left-radius: 0;
