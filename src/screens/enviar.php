@@ -1,4 +1,9 @@
-<?php include('../php/verificar.php'); ?>
+<?php session_start() ?>
+
+<?php if(!(isset($_SESSION['EMAIL']))) {
+    include('../php/verificar.php');
+}
+?>
 
 <!DOCTYPE html>
 <html lang="pt-BR">

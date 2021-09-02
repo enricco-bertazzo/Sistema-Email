@@ -4,8 +4,6 @@ session_start();
 
 include('connect.php');
 
-include('verificar.php');
-
 $email = mysqli_real_escape_string($connect, $_POST['email']);
 $senha = mysqli_real_escape_string($connect, $_POST['senha']);
 
