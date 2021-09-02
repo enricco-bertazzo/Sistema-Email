@@ -1,3 +1,5 @@
+<?php include('../php/verificar.php'); ?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 

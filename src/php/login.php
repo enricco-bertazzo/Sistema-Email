@@ -4,10 +4,7 @@ session_start();
 
 include('connect.php');
 
-if(empty($_POST['email']) || empty($_POST['senha'])){
-    header("location: ../screens/index.php");
-    exit();
-}
+include('verificar.php');
 
 $email = mysqli_real_escape_string($connect, $_POST['email']);
 $senha = mysqli_real_escape_string($connect, $_POST['senha']);
@@ -20,7 +17,7 @@ $row = mysqli_num_rows($result);
 
 if($row == 1){
     $_SESSION['EMAIL'] = $email;
-    header('location: email.php');
+    header('location: ../screens/email.php');
     exit();
     
 } else {
