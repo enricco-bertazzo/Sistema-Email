@@ -17,6 +17,16 @@ $usuario = "CREATE TABLE IF NOT EXISTS `login`.`usuario` (
         UNIQUE INDEX `id_usuario_UNIQUE` (`id_usuario` ASC) VISIBLE,
         UNIQUE INDEX `email_UNIQUE` (`email` ASC) VISIBLE)";
 
+$email = "CREATE TABLE IF NOT EXISTS `login`.`emails` (
+        `id_email` INT NOT NULL AUTO_INCREMENT,
+        `remetente` VARCHAR(32) NOT NULL,
+        `destinatario` VARCHAR(32) NOT NULL,
+        `assunto` VARCHAR(32) NOT NULL,
+        `mensagem` VARCHAR(256) NOT NULL,
+        PRIMARY KEY (`id_email`),
+        UNIQUE INDEX `id_email_UNIQUE` (`id_email` ASC) VISIBLE)";
+
 $result = mysqli_query($connect, $usuario);
+$result_email = mysqli_query($connect, $email);
 
 ?>
