@@ -25,6 +25,6 @@ if($connect->query($sql) === TRUE){
 
 $connect -> close();
 
-header('location: login.php');
+header('location: ../screens/index.php');
 exit;
 ?>

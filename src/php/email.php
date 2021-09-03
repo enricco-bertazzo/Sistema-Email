@@ -3,16 +3,16 @@
 session_start();
 
 include('connect.php');
-include('enviar.php');
+$de = $_SESSION['EMAIL'];
 
-$sql = "SELECT * FROM emails WHERE email LIKE '$para'";
+$sql = "SELECT * FROM emails WHERE destinatario LIKE '$de'";
 
 $resultado_emails = mysqli_query($connect, $sql);
 
 while($rows_emails = mysqli_fetch_array($resultado_emails)){
-    echo "Remetente: ".$rows_cursos['remetente'];
-    echo "Assunto: ".$rows_cursos['assunto'];
-    echo "Mensagem: ".$rows_cursos['mensagem'];
+    echo "<br>Remetente: ".$rows_emails['remetente'];
+    echo "<br>Assunto: ".$rows_emails['assunto'];
+    echo "<br>Mensagem: ".$rows_emails['mensagem'];
 }
 
 ?>

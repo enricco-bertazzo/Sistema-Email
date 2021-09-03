@@ -67,24 +67,10 @@
                                                         <label for="check1"></label>
                                                     </div>
                                                 </td>
-                                                <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
-                                                <td class="mailbox-subject"><b>AdminLTE 3.0 Issue</b> - Trying to find a solution to this
-                                                    problem...
+                                                <td class="mailbox-name">Alexander Pierce</td>
+                                                <td class="mailbox-subject"><b><a class="no-style-link" href="read-mail.html">Trying to find a solution to this problem...</a></b>
                                                 </td>
                                                 <td class="mailbox-date">5 mins ago</td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="icheck-primary">
-                                                        <input type="checkbox" value="" id="check2">
-                                                        <label for="check2"></label>
-                                                    </div>
-                                                </td>
-                                                <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
-                                                <td class="mailbox-subject"><b>AdminLTE 3.0 Issue</b> - Trying to find a solution to this
-                                                    problem...
-                                                </td>
-                                                <td class="mailbox-date">28 mins ago</td>
                                             </tr>
                                         </tbody>
                                     </table>

@@ -37,7 +37,7 @@
                         <div class="card card-primary card-outline">
                             <div class="card-header">
                                 <p class="mt-3">
-                                    <a href="" class="btn btn-primary btn-block">Enviar e-mail</a>
+                                    <a class="btn btn-primary btn-block">+</a>
                                     <a href="email.php" class="no-style-link">
                                         <i class="fas fa-inbox"></i> Caixa de entrada
                                     </a>
@@ -53,6 +53,14 @@
                                     <table class="table table-hover table-striped">
                                         <form action="../php/enviar.php" method="post">
                                             <tbody>
+                                                <?php
+                                                if (isset($_SESSION['usuario_nao_existe'])) {
+                                                    echo '<div class="alert alert-danger mt-3" role="alert">
+                                                            E-mail não existe!
+                                                        </div>';
+                                                    unset($_SESSION['usuario_nao_existe']);
+                                                }
+                                                ?>
                                                 <div class="form-floating">
                                                     <label for="para">Para:</label>
                                                 </div>
@@ -60,20 +68,20 @@
                                                     <div class="input-group-prepend">
                                                         <span class="input-group-text" id="basic-addon1">Para:</span>
                                                     </div>
-                                                    <input class="form-control" type="text" name="para" id="para" placeholder="" required autofocus minlength="1" maxlength="32">
+                                                    <input class="form-control" type="email" name="para" id="para" placeholder="" required autofocus minlength="1" maxlength="32">
                                                 </div>
                                                 <div class="input-group mb-3">
                                                     <div class="input-group-prepend">
                                                         <span class="input-group-text" id="basic-addon1">Assunto:</span>
                                                     </div>
-                                                    <input class="form-control" type="text" name="assunto" id="assunto" placeholder="" required autofocus minlength="1" maxlength="32">
+                                                    <input class="form-control" type="text" name="assunto" id="assunto" placeholder="" required minlength="1" maxlength="32">
                                                 </div>
                                                 <div class="input-group">
                                                     <span class="input-group-text">Mensagem:</span>
-                                                    <textarea class="form-control" aria-label="With textarea" name="mensagem" id="mensagem"></textarea>
+                                                    <textarea class="form-control" aria-label="With textarea" name="mensagem" id="mensagem" required minlength="1" maxlength="256"></textarea>
                                                 </div>
                                             </tbody>
-                                            <input type="submit" class="btn btn-primary btn-block" value="Enviar e-mail">
+                                            <input type="submit" class="btn btn-primary btn-block mt-3" value="Enviar e-mail">
                                         </form>
                                     </table>
                                 </div>
