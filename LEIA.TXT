@@ -1,0 +1,2 @@
+OBS: Não conseguimos fazer funcionar com a utilização de socket, e para não ficar sem entregar
+     deixamos o codigo php que fizemos no inicio para montar o sistema de e-mail.

@@ -23,9 +23,6 @@ $result = mysqli_query($connect, $sql);
 $_SESSION['email_enviado'] = true;
 header('location: ../screens/enviados.php');
 
-// OBS: Não conseguimos fazer funcionar com a utilização de socket, e para não ficar sem entregar
-//      deixamos o codigo php que fizemos no inicio para montar o sistema de e-mail.
-
 // $host = "127.0.0.1";
 // $socket = socket_create(AF_INET, SOCK_STREAM, SOL_TCP);
 // $porta = 3000;

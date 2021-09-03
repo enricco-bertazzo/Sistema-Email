@@ -1,6 +1,6 @@
 <?php session_start() ?>
 
-<?php if(!(isset($_SESSION['EMAIL']))) {
+<?php if (!(isset($_SESSION['EMAIL']))) {
     include('../php/verificar.php');
 }
 ?>
@@ -54,24 +54,13 @@
                                         </button>
                                     </div>
                                     <button type="button" class="btn btn-default btn-sm">
-                                        <i class="fas fa-sync-alt"></i>
+                                        <a onclick='window.location.reload(true)'><i class="fas fa-sync-alt"></i></a>
                                     </button>
                                 </div>
                                 <div class="table-responsive mailbox-messages">
                                     <table class="table table-hover table-striped">
                                         <tbody>
-                                            <tr>
-                                                <td>
-                                                    <div class="icheck-primary">
-                                                        <input type="checkbox" value="" id="check1">
-                                                        <label for="check1"></label>
-                                                    </div>
-                                                </td>
-                                                <td class="mailbox-name">Alexander Pierce</td>
-                                                <td class="mailbox-subject"><b><a class="no-style-link" href="read-mail.html">Trying to find a solution to this problem...</a></b>
-                                                </td>
-                                                <td class="mailbox-date">5 mins ago</td>
-                                            </tr>
+                                            <?php include('../php/enviados.php') ?>
                                         </tbody>
                                     </table>
                                 </div>
@@ -84,7 +73,7 @@
                                         </button>
                                     </div>
                                     <button type="button" class="btn btn-default btn-sm">
-                                        <i class="fas fa-sync-alt"></i>
+                                        <a onclick='window.location.reload(true)'><i class="fas fa-sync-alt"></i></a>
                                     </button>
                                 </div>
                             </div>

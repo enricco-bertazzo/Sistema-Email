@@ -1,6 +1,6 @@
 <?php session_start() ?>
 
-<?php if(!(isset($_SESSION['EMAIL']))) {
+<?php if (!(isset($_SESSION['EMAIL']))) {
     include('../php/verificar.php');
 }
 ?>
@@ -55,38 +55,13 @@
                                         </button>
                                     </div>
                                     <button type="button" class="btn btn-default btn-sm">
-                                        <i class="fas fa-sync-alt"></i>
+                                        <a onclick='window.location.reload(true)'><i class="fas fa-sync-alt"></i></a>
                                     </button>
                                 </div>
                                 <div class="table-responsive mailbox-messages">
                                     <table class="table table-hover table-striped">
                                         <tbody>
-                                            <tr>
-                                                <td>
-                                                    <div class="icheck-primary">
-                                                        <input type="checkbox" value="" id="check1">
-                                                        <label for="check1"></label>
-                                                    </div>
-                                                </td>
-                                                <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
-                                                <td class="mailbox-subject"><b>AdminLTE 3.0 Issue</b> - Trying to find a solution to this
-                                                    problem...
-                                                </td>
-                                                <td class="mailbox-date">5 mins ago</td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="icheck-primary">
-                                                        <input type="checkbox" value="" id="check2">
-                                                        <label for="check2"></label>
-                                                    </div>
-                                                </td>
-                                                <td class="mailbox-name"><a href="read-mail.html">Alexander Pierce</a></td>
-                                                <td class="mailbox-subject"><b>AdminLTE 3.0 Issue</b> - Trying to find a solution to this
-                                                    problem...
-                                                </td>
-                                                <td class="mailbox-date">28 mins ago</td>
-                                            </tr>
+                                            <?php include('../php/email.php') ?>
                                         </tbody>
                                     </table>
                                 </div>
@@ -99,7 +74,7 @@
                                         </button>
                                     </div>
                                     <button type="button" class="btn btn-default btn-sm">
-                                        <i class="fas fa-sync-alt"></i>
+                                        <a onclick='window.location.reload(true)'><i class="fas fa-sync-alt"></i></a>
                                     </button>
                                 </div>
                             </div>
