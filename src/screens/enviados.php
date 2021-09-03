@@ -48,11 +48,6 @@
                             </div>
                             <div class="card-body p-0">
                                 <div class="mailbox-controls">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-default btn-sm">
-                                            <i class="far fa-trash-alt"></i>
-                                        </button>
-                                    </div>
                                     <button type="button" class="btn btn-default btn-sm">
                                         <a onclick='window.location.reload(true)'><i class="fas fa-sync-alt"></i></a>
                                     </button>
@@ -67,11 +62,6 @@
                             </div>
                             <div class="card-footer p-0">
                                 <div class="mailbox-controls">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-default btn-sm">
-                                            <i class="far fa-trash-alt"></i>
-                                        </button>
-                                    </div>
                                     <button type="button" class="btn btn-default btn-sm">
                                         <a onclick='window.location.reload(true)'><i class="fas fa-sync-alt"></i></a>
                                     </button>
